@@ -37,7 +37,7 @@
 
 	</target>
 	<target name="checkstyle">
-		<checkstyle config="sun-checks.xml">
+		<checkstyle config="sun-checks.xml" failOnViolation="false">
 			<fileset dir="src/example" includes ="**/*.java"/>
 			<formatter type = "xml" tofile="checkstyle-errors.xml"/>
 		</checkstyle>
